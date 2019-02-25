@@ -1,0 +1,140 @@
+/*******************************************************************************************************
+*                                      Rotina p ver a resposta j2                                      *
+*******************************************************************************************************/
+While(!rp)                         				//Verifica se o tempo acabou
+{
+	If(ACABTEMP)
+		{
+			BUZINA=1;							//buzina
+			ft=1;								//diz que o tempo para responder acabou
+			LVM2=1;							    //lampada vermelha
+			Delay_ms(700);	
+			BUZINA=0;
+			LVM2=1;						     	//lampada vermelha
+			rp=1;								//diz que a pergunta terminou
+			Portc.f5=1;							//sinal de reset para o cronometro
+		}
+	If(A&&!ft&&!rp)
+	{
+		If(resp==1)                     		//A resposta é "A"?
+			{
+				LVD2=1;						    //lampada verde
+				Portc.f1=~portc.f1;				//pulso de clock p placar
+				Delay_ms(100);
+				Portc.f1=~portc.f1;
+				Delay_ms(700);
+				LVD2=0;
+				rp=1;
+				Portc.f5=1;						//sinal de reset para o cronometro	
+			}
+		else
+		{
+			BUZINA=1;							//buzina
+			LVM2=1;							    //lampada vermelha
+			Delay_ms(700);
+			BUZINA=0;
+			LVM2=1;						    	//lampada vermelha
+			rp=1;
+			Portc.f5=1;							//sinal de reset para o cronometro	
+
+		}
+	}
+	If(B&&!ft&&!rp)
+	{
+		If(resp==2)                     		//A resposta é "B"?
+			{
+				LVD2=1;						    //lampada verde
+				Portc.f1=~portc.f1;				//pulso de clock p placar
+				Delay_ms(100);
+				Portc.f1=~portc.f1;
+				Delay_ms(700);
+				LVD2=0;
+				rp=1;
+				Portc.f5=1;						//sinal de reset para o cronometro	
+			}
+		else
+		{
+			BUZINA=1;							//buzina
+			LVM2=1;							    //lampada vermelha
+			Delay_ms(700);
+			BUZINA=0;
+			LVM2=1;							    //lampada vermelha
+			rp=1;
+			Portc.f5=1;							//sinal de reset para o cronometro	
+		}	
+	}
+	If(C&&!ft&&!rp)
+	{
+		If(resp==3)                     		//A resposta é "C"?
+			{
+				LVD2=1;						    //lampada verde
+				Portc.f1=~portc.f1;				//pulso de clock p placar
+				Delay_ms(100);
+				Portc.f1=~portc.f1;
+				Delay_ms(700);
+				LVD2=0;
+				rp=1;
+				Portc.f5=1;						//sinal de reset para o cronometro	
+			}
+		else
+		{
+			BUZINA=1;							//buzina
+			LVM2=1;							    //lampada vermelha
+			Delay_ms(700);
+			BUZINA=0;
+			LVM2=1;							    //lampada vermelha
+			rp=1;
+			Portc.f5=1;							//sinal de reset para o cronometro	
+		}
+	}
+	If(D&&!ft&&!rp)
+	{
+		If(resp==4)                     		//A resposta é "D"?
+			{
+				LVD2=1;						    //lampada verde
+				Portc.f1=~portc.f1;				//pulso de clock p placar
+				Delay_ms(100);	
+				Portc.f1=~portc.f1;
+				Delay_ms(700);
+				LVD2=0;
+				rp=1;
+				Portc.f5=1;						//sinal de reset para o cronometro
+			}
+		else
+		{
+			BUZINA=1;							//buzina
+			LVM2=1;							    //lampada vermelha
+			Delay_ms(700);
+			BUZINA=0;
+			LVM2=1;							    //lampada vermelha
+			rp=1;
+			Portc.f5=1;							//sinal de reset para o cronometro	
+		}
+	}
+	If(E&&!ft%%!rp)
+	{
+		If(resp==5)                      		//A resposta é "E"?
+			{
+				LVD2=1;						    //lampada verde
+				Portc.f1=~portc.f1;				//pulso de clock p placar
+				Delay_ms(100);
+				Portc.f1=~portc.f1;
+				Delay_ms(700);
+				LVD2=0;
+				rp=1;
+				Portc.f5=1;						//sinal de reset para o cronometro	
+			}
+		else
+		{
+			BUZINA=1;							//buzina
+			LVM2=1;							    //lampada vermelha
+			Delay_ms(700);
+			BUZINA=0;
+			LVM2=1;							    //lampada vermelha
+			rp=1;
+			Portc.f5=1; 						//sinal de reset para o cronometro	
+		}
+	}
+
+}
+rp=0;
