@@ -1,0 +1,16 @@
+ELECTRICAL RULES CHECK REPORT
+=============================
+Design:   C:\Users\meire\OneDrive - Centro Paula Souza - Etec\Etec\Casa Aberta\2017 - QUIZZ\Projeto\Circuito\Mesa1\Lampadas\Lp 18f4520.DSN
+Doc. no.: <NONE>
+Revision: <NONE>
+Author:   <NONE>
+Created:  02/06/17
+Modified: 03/06/17
+
+#I:Compiling design 'C:\Users\meire\OneDrive - Centro Paula Souza - Etec\Etec\Casa Aberta\2017 - QUIZZ\Projeto\Circuito\Mesa1\Lampadas\Lp 18f4520.DSN'.
+%C=0002,00000003
+
+
+Netlist generated OK.
+No ERC errors found.
+
