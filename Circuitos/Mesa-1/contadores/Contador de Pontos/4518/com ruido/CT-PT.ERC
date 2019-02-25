@@ -1,0 +1,17 @@
+ELECTRICAL RULES CHECK REPORT
+=============================
+Design:   E:\azul\Casa aberta\Mesa1\contadores\Contador de Pontos\4518\CT-PT.DSN
+Doc. no.: <NONE>
+Revision: <NONE>
+Author:   <NONE>
+Created:  05/06/17
+Modified: 05/06/17
+
+#I:Compiling design 'E:\azul\Casa aberta\Mesa1\contadores\Contador de Pontos\4518\CT-PT.DSN'.
+%C=0002,00000003
+
+WARNING:  VDD,<TERM> (Power Terminal) connected to VCC,<TERM> (Power Terminal) 
+
+Netlist generated OK.
+ERC errors found.
+

@@ -1,0 +1,17 @@
+ELECTRICAL RULES CHECK REPORT
+=============================
+Design:   C:\Users\meire\OneDrive - Centro Paula Souza - Etec\Etec\Casa Aberta\2017 - QUIZZ\Projeto\Circuito\Mesa-1\contadores\Certos\Contador de 0 até 60\4518 - Correto\CT0A60CMS.DSN
+Doc. no.: <NONE>
+Revision: <NONE>
+Author:   <NONE>
+Created:  05/06/17
+Modified: 06/06/17
+
+#I:Compiling design 'C:\Users\meire\OneDrive - Centro Paula Souza - Etec\Etec\Casa Aberta\2017 - QUIZZ\Projeto\Circuito\Mesa-1\contadores\Certos\Contador de 0 até 60\4518 - Correto\CT0A60CMS.DSN'.
+%C=0002,00000003
+
+WARNING:  VDD,<TERM> (Power Terminal) connected toVCC,<TERM> (Power Terminal) 
+
+Netlist generated OK.
+ERC errors found.
+
